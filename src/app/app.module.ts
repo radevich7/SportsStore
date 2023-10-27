@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {StoreModule} from "./store/store.module";
+import {CommonModule} from "@angular/common";
 
 
 @NgModule({
@@ -10,7 +11,7 @@ import {StoreModule} from "./store/store.module";
     AppComponent,
   ],
   imports: [
-    BrowserModule, StoreModule
+    BrowserModule, StoreModule, CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
